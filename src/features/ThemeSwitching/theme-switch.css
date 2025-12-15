@@ -1,0 +1,29 @@
+.theme-toggle-switch {
+  width: 3rem;
+  border-radius: 1.3rem;
+  background: var(--toggle-gradient-dark);
+  transition: all 0.3 ease;
+}
+
+.toggle-ball {
+  height: 1.2rem;
+  margin: 0.17rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: var(--card-bg-dark);
+  transition: all 0.3s ease;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.theme-toggle-switch:has(input[type='checkbox']:checked) .toggle-ball {
+  transform: translateX(1.5rem);
+  background-color: var(--bg-light);
+}
+
+.theme-toggle-switch:has(input[type='checkbox']:checked) {
+  background: none;
+  background-color: var(--toggle-gray-light);
+}

@@ -1,0 +1,35 @@
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.appName {
+  font-size: 1.6rem;
+  color: var(--text-white-dark);
+  margin-block-end: 0.4rem;
+}
+
+.totalFollowers {
+  font-weight: var(--fw-700);
+  color: var(--text-gray-light);
+  margin-block-end: 1.5rem;
+}
+
+.divider {
+  background-color: none;
+  border: none;
+  border-top: solid var(--card-bg-dark) 0.15rem;
+}
+
+.toggleTheme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1.5rem;
+}
+
+.currentTheme {
+  font-weight: var(--fw-700);
+  color: var(--text-gray-light);
+}

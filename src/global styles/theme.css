@@ -1,0 +1,29 @@
+[data-theme="light"] {
+  background-color: var(--bg-light);
+  color: var(--text-dark-light);
+}
+
+[data-theme="dark"] {
+  background-color: var(--bg-dark);
+  color: var(--text-white-dark);
+}
+
+.bgContainer {
+  position: absolute;
+  z-index: -1;
+  top: 0%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.topBackground {
+  width: 100%;
+  height: 20%;
+  background-color: var(--top-bg-dark);
+}
+
+.botBackground {
+  width: 100%;
+  height: 80%;
+  background-color: var(--bg-dark);
+}
