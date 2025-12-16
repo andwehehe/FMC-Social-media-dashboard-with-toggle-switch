@@ -1,10 +1,13 @@
 import Dashboard from "./pages/Dashboard"
+import ThemeProvider from "./features/ThemeSwitching/ThemeContext"
 
 function App() {
 
   return (
     <>
-      <Dashboard />
+      <ThemeProvider>
+        <Dashboard />
+      </ThemeProvider>
     </>
   )
 }

@@ -1,0 +1,120 @@
+.followerCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 0.3rem;
+  border-top: solid 0.25rem;
+  overflow: hidden;
+}
+
+.facebook {
+  border-color: var(--blue-facebook);
+}
+
+.twitter {
+  border-color: var(--blue-twitter);
+}
+
+.instagram::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1.6%;
+  left: 0%;
+  padding: 0.25rem;
+  width: 100%;
+  background: var(--instagram-gradient);
+}
+
+.instagram {
+  border: none;
+}
+
+.youtube {
+  border-color: var(--red-youtube);
+}
+
+.cardHeading {
+  font-size: 0.9rem;
+  font-weight: var(--fw-700);
+  color: var(--text-gray-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.numOfFollwers {
+  display: flex;
+  flex-direction: column;
+  font-size: 3.7rem;
+  color: var(--text-white-dark);
+}
+
+.numOfFollwers span {
+  font-size: 0.8rem;
+  font-weight: var(--fw-400);
+  color: var(--text-gray-dark);
+  letter-spacing: 0.32rem;
+}
+
+.cardFooter {
+  color: var(--text-white-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.increased {
+  font-weight: var(--fw-700);
+  color: var(--green-500);
+}
+
+.decreased {
+  font-weight: var(--fw-700);
+  color: var(--red-500);
+}
+
+/* Theme Switch */
+
+/* Dark */
+[data-theme="dark"] .followerCard {
+  background-color: var(--card-bg-dark);
+}
+
+[data-theme="dark"] .username, .numOfFollwers span {
+  color: var(--text-gray-dark);
+}
+
+[data-theme="dark"] .numOfFollwers {
+  color: var(--text-white-dark);
+}
+
+[data-theme="dark"] .neutral {
+  font-weight: var(--fw-700);
+  color: var(--text-white-dark);
+}
+
+
+
+/* Light */
+[data-theme="light"] .followerCard {
+  background-color: var(--card-bg-light);
+}
+
+[data-theme="light"] .username, .numOfFollwers span {
+  color: var(--text-gray-light);
+}
+
+[data-theme="light"] .numOfFollwers {
+  color: var(--text-dark-light);
+}
+
+[data-theme="light"] .neutral {
+  font-weight: var(--fw-700);
+  color: var(--green-500);
+}

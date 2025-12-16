@@ -47,3 +47,11 @@ input, button, textarea, select {
   font-weight: 700;
   src: url('../assets/fonts/inter-v20-latin-700.woff2') format('woff2');
 }
+
+[data-theme="dark"] body {
+  background-color: var(--bg-dark);
+}
+
+[data-theme="light"] body {
+  background-color: var(--bg-light);
+}

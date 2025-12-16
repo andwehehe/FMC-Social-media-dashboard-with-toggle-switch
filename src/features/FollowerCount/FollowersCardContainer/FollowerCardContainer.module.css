@@ -6,20 +6,18 @@
 
 .appName {
   font-size: 1.6rem;
-  color: var(--text-white-dark);
   margin-block-end: 0.4rem;
 }
 
 .totalFollowers {
   font-weight: var(--fw-700);
-  color: var(--text-gray-light);
   margin-block-end: 1.5rem;
 }
 
 .divider {
   background-color: none;
   border: none;
-  border-top: solid var(--card-bg-dark) 0.15rem;
+  border-top: solid 0.15rem;
 }
 
 .toggleTheme {
@@ -31,5 +29,54 @@
 
 .currentTheme {
   font-weight: var(--fw-700);
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+  margin-block: 1rem;
+}
+
+/* Theme Switch */
+
+/* Dark */
+[data-theme="dark"] .appName {
+  color: var(--text-white-dark);
+}
+
+[data-theme="dark"] .totalFollowers {
+  color: var(--text-gray-dark);
+}
+
+[data-theme="dark"] .currentTheme {
+  color: var(--text-gray-dark);
+}
+
+[data-theme="dark"] .divider {
+  border-color: var(--card-bg-dark);
+}
+
+
+
+
+
+/* Light */
+[data-theme="light"] .appName {
+  color: var(--text-dark-light);
+}
+
+[data-theme="light"] .totalFollowers {
   color: var(--text-gray-light);
+}
+
+[data-theme="light"] .currentTheme {
+  color: var(--text-gray-light);
+}
+
+[data-theme="light"] .divider {
+  border-color: var(--text-gray-dark);
 }

@@ -6,11 +6,7 @@ function Dashboard() {
 
   return(
     <section className={styles.mainPage}>
-      <div className="bgContainer">
-        <div className="topBackground"></div>
-        <div className="botBackground"></div>
-      </div>
-
+      <div className={styles.topBackground}></div>
       <main className={styles.mainContent}>
         <FollowerCardContainer />
       </main>
