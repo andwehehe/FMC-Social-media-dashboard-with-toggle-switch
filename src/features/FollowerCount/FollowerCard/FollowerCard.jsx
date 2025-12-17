@@ -6,19 +6,22 @@ import youtube from "/src/assets/icons/icon-youtube.svg"
 import increase from "/src/assets/icons/icon-up.svg"
 import decrease from "/src/assets/icons/icon-down.svg"
 
+// eslint-disable-next-line react-refresh/only-export-components
+export const platforms = {
+  facebook, twitter, instagram, youtube
+};
+
 function FollowerCard({ platform, username, followers, status, changes }) {
 
-  const platforms = {
-    facebook, twitter, instagram, youtube
-  };
-
   const computedFollowers = followers / 1000;
-  let changesEval = "neutral";
+  let changesEval;
   
   if(changes >= 20 && status === "increased") {
     changesEval = "increased";
   } else if(status === "decreased") {
     changesEval = "decreased";
+  } else {
+    changesEval = "neutral";
   }
 
   return(

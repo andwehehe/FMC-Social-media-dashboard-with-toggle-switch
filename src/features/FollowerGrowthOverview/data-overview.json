@@ -1,0 +1,66 @@
+[
+  {
+    "platform": "facebook",
+    "category": "Page Views",
+    "quantity": 87,
+    "status": "increased",
+    "changes": "3%",
+    "key": 1
+  },
+  {
+    "platform": "facebook",
+    "category": "Likes",
+    "quantity": 52,
+    "status": "decreased",
+    "changes": "2%",
+    "key": 2
+  },
+  {
+    "platform": "instagram",
+    "category": "Likes",
+    "quantity": 5462,
+    "status": "increased",
+    "changes": "2257%",
+    "key": 3
+  },
+  {
+    "platform": "instagram",
+    "category": "Profile Views",
+    "quantity": 52000,
+    "status": "increased",
+    "changes": "1375%",
+    "key": 4
+  },
+  {
+    "platform": "twitter",
+    "category": "Retweets",
+    "quantity": 117,
+    "status": "increased",
+    "changes": "303%",
+    "key": 5
+  },
+  {
+    "platform": "twitter",
+    "category": "Likes",
+    "quantity": 507,
+    "status": "increased",
+    "changes": "553%",
+    "key": 6
+  },
+  {
+    "platform": "youtube",
+    "category": "Likes",
+    "quantity": 107,
+    "status": "decreased",
+    "changes": "19%",
+    "key": 7
+  },
+  {
+    "platform": "youtube",
+    "category": "Total Views",
+    "quantity": 1407,
+    "status": "decreased",
+    "changes": "12%",
+    "key": 8
+  }
+]

@@ -1,0 +1,25 @@
+.overviewHeading {
+  font-size: 1.6rem;
+  margin-block: 3rem 2rem;;
+}
+
+.overviewStatsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Theme Switch */
+
+/* Dark */
+[data-theme="dark"] .overviewHeading {
+  color: var(--text-white-dark);
+}
+
+
+/* Light */
+[data-theme="light"] .overviewHeading {
+  color: var(--text-white-light);
+}
