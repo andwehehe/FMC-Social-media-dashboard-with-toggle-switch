@@ -5,7 +5,7 @@
 }
 
 .appName {
-  font-size: 1.6rem;
+  font-size: clamp(1.6rem, 7vw, 1.85rem);
   margin-block-end: 0.4rem;
 }
 
@@ -32,13 +32,30 @@
 }
 
 .cardsContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
   gap: 1.5rem;
   text-align: center;
   margin-block: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .divider{
+    display: none;
+  }
+  
+  .heroSection {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .toggleTheme {
+    gap: 1rem;
+  }
+  
+  .heroSection {
+    margin-block-end: 2rem;
+  }
 }
 
 /* Theme Switch */

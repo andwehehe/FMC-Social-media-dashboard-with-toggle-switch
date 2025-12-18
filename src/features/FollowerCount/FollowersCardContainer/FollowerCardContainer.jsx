@@ -10,12 +10,14 @@ function FollowerCardContainer() {
     <section className={styles.mainContainer}>
 
       <div className={styles.heroSection}>
-        <h1 className={styles.appName}>
-          Social Media Dashboard
-        </h1>
-        <p className={styles.totalFollowers}>
-          Total Follower: 23,004
-        </p>
+        <div className={styles.headingContainer}>
+          <h1 className={styles.appName}>
+            Social Media Dashboard
+          </h1>
+          <p className={styles.totalFollowers}>
+            Total Follower: 23,004
+          </p>
+        </div>
         
         <hr className={styles.divider}/>
 
